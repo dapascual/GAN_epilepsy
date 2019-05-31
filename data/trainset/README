@@ -1,0 +1,3 @@
+Place here all the training samples in .mat format.
+Each file should contain two arrays named 'seiz' and 'non_seiz'.
+The files should be named: 	"pat_<id>_GAN_<i>.mat", where <id> is the id number of the patient and <i> is the sample number.
