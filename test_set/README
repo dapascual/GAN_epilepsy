@@ -1,0 +1,4 @@
+This folder should contain the non seizure samples to transform into seizures.
+These samples should be contained inside of .mat files in an array called ´non_seiz´.
+The files should be named: 'pat_<id>_GAN_test_<i>.mat', where <id> is the patient id and <i> is the sample number.
+The sample files should be place under folders, one folder per patient with the folder names: 'pat_<id>'
