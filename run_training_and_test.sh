@@ -1,11 +1,7 @@
 #!/bin/bash
 
-list='pat_102 pat_7302 pat_8902 pat_11002 pat_16202 pat_21602 pat_21902 pat_22602 pat_23902 pat_26102 pat_30002 pat_30802 pat_32502 pat_32702 pat_45402 pat_46702 pat_55202 pat_56402 pat_58602 pat_59102 pat_75202 pat_79502 pat_85202 pat_92102 pat_93902 pat_96002 pat_103002 pat_109502 pat_111902 pat_114902'
+list='pat_1 pat_2 pat_3 pat_4 pat_5 pat_6 pat_7 pat_8 pat_9 pat_10 pat_11 pat_12 pat_13 pat_14 pat_15 pat_16 pat_17 pat_18 pat_19 pat_20 pat_21 pat_22 pat_23 pat_24 pat_25 pat_26 pat_27 pat_28 pat_29 pat_30'
 
-
-#setenv LD_LIBRARY_PATH /usr/local/cudnn5/lib64:$LD_LIBRARY_PATH
-
-list='pat_102'
 
 for i in $list; do
       
