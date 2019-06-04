@@ -7,9 +7,9 @@ In this work we generate 4-second long EEG samples of epileptic seizures for two
 ### Setup
 
 The project is developped using Python 2.7 and Tensorflow 0.12.1. To install the dependencies you can run in your terminal:
-'''
+```
 pip install -r requirements.txt
-'''
+```
 The code is prepared to read the data from Matlab (.mat) files.
 
 
