@@ -1,0 +1,4 @@
+This folder should contain one file per patient named 'pat_<id>_trainRF_nonseiz.mat'.
+These files should contain a matrix of size Nx2048, where N is the number of non seizure samples considered for the patient. 
+The number of non seizure samples is advised to be between 2000 and 6000.
+The matrix should be called 'X_non_seiz'.
