@@ -1,1 +1,2 @@
-This folder should contain the seizures transformed from non-seizures in arrays of called GAN_seiz of size 1x2048
+This folder should contain on folder per patient. Each of the folders contains one .mat file per seizure which stores the seizures 
+transformed from non-seizures in arrays called GAN_seiz of size 1x2048.
