@@ -24,7 +24,7 @@ The rest of the folders will contain the data produced at different stages:
  - ./gan_results: destination of the model files resulting from the training. These files should be stored inside of folders named: `leave_out_pat_<id>`
  - ./test_set_transformed: destination of the seizures transformed from non-seizures.
   
-  ### Run
+  ### Run training and test of GAN
   
   To run the code it is necessary to firstly create the TFrecords files:
   
@@ -40,3 +40,13 @@ The rest of the folders will contain the data produced at different stages:
   
   This script will train and test the model for all the patients, i.e., leaving out one patient from the training set and generating seizure samples for that one patient. Since this process is repeated for all the patients, it may take a long time to complete. In order to train and test for only one patient, change the entry `list` in the script.
   
+### Evaluate synthetic seizures
+
+To evaluate the resulting synthetic samples, go to the `evaluation` folder, where the matlab scripts are located. Before being able to run these scripts, place the data according to the following folder structure:
+
+ - ./evaluation/data/RF_testset: This folder should contain one file per patient named `pat_<id>_testRF.mat`, which is the test set for the Random Forest classifier. These files should contain a matrix named `X_seiz` of size Nx2048, and a matrix named `X_non_seiz` of size 2Nx2048, where N is the number seizure samples of the patient without overlap. 
+ - ./evaluation/data/RF_trainset_nonseiz: This folder should contain one file per patient named `pat_<id>_trainRF_nonseiz.mat`. These files should contain a matrix called `X_non_seiz` of size Mx2048, where M is the number of non seizure samples considered for the patient. M is advised to range between 2000 and 6000.
+ - ./evaluation/data/RF_trainset_seiz: This folder should contain one file per patient named `pat_<id>_trainRF_seiz.mat`. These files should contain a matrix called `X_seiz` of size Nx2048, where N is the number of seizure samples of the patient.
+
+Once the data is placed in the correct folders, the two scripts to launch are `baseline_for_GAN.m`, which performs the baseline evaluation and stores the results in the file `Results_baseline_GAN.mat`, and `test_GAN.m`, which performs the evaluation of the synthetic seizure samples and stores the result in `Results_test_GAN.mat`.
+
