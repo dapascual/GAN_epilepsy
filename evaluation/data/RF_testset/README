@@ -1,0 +1,3 @@
+This folder should contain one file per patient named 'pat_<id>_testRF.mat', which is the test set for the Random Forest classifier.
+These files should contain a matrix named X_seiz of size Nx2048, where N is the number seizure samples of the patient without overlap. 
+These files should also contain a matrix named X_non_seiz of size 2Nx2048, where N is the number seizure samples of the patient without overlap. 
