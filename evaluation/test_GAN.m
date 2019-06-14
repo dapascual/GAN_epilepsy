@@ -115,4 +115,4 @@ gmean_total = geomean(gmean_by_patient);
 sens_total = geomean(sens_by_patient);
 spec_total = geomean(spec_by_patient);
 
-save('Results_test_GAN_2000samples', 'patient_result', 'sens_total', 'spec_total', 'gmean_total');
+save('Results_test_GAN', 'patient_result', 'sens_total', 'spec_total', 'gmean_total');
