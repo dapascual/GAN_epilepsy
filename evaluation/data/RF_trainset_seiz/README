@@ -1,0 +1,3 @@
+This folder should contain one file per patient named 'pat_<id>_trainRF_seiz.mat'.
+These files should contain a matrix of size Nx2048, where N is the number of seizure samples of the patient.
+The matrix should be called 'X_seiz'
