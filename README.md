@@ -40,7 +40,7 @@ The rest of the folders will contain the data produced at different stages:
   
   This script will train and test the model for all the patients, i.e., leaving out one patient from the training set and generating seizure samples for that one patient. Since this process is repeated for all the patients, it may take a long time to complete. In order to train and test for only one patient, change the entry `list` in the script.
   
-### Evaluation of synthetic seizures
+## Evaluation of synthetic seizures
 
 To evaluate the resulting synthetic samples, go to the `evaluation` folder, where the matlab scripts are located. Before being able to run these scripts, place the data according to the following folder structure:
 
